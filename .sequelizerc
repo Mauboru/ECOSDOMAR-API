@@ -1,0 +1,13 @@
+const path = require('path');
+
+// Caminhos relativos à pasta onde está o .sequelizerc (raiz do projeto API-GYMIA)
+// Assim o migrate funciona rodando de qualquer pasta (API-GYMIA ou API-GYMIA/src)
+const root = __dirname;
+
+module.exports = {
+  'config': path.join(root, 'src', 'config', 'config.js'),
+  'models-path': path.join(root, 'src', 'models'),
+  'seeders-path': path.join(root, 'src', 'seeders'),
+  'migrations-path': path.join(root, 'src', 'migrations')
+};
+

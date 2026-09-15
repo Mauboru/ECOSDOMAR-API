@@ -8,12 +8,15 @@ const ALLOWED_TABLES = new Set([
   'qualidade_agua',
   'avifauna',
   'especies_exoticas',
-  'macrolixo',
+  'macrolixo_costeira',
+  'macrolixo_estuario',
   'vegetacao',
-  'peixes',
+  'ictiofauna',
   'paisagem',
   'ar',
   'restinga',
+  'microplastico_agua',
+  'microplastico_sedimento'
 ]);
 
 function isAllowed(table: string): boolean {
